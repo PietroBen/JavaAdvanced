@@ -90,10 +90,10 @@ public class Exercises {
 
         for (Integer number : numbers) {
             //write your code here
-            if (number > max) {
+            if (number >= max + 1) {
                 max = number;
             }
-            if (number < min) {
+            if (number <= min - 1) {
                 min = number;
             }
         }
