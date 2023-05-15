@@ -1,6 +1,7 @@
 package JavaAdvanced._6;
 
 public class Exercises {
+
     public static void main(String[] args) {
         exercise1();
         exercise2();
@@ -44,15 +45,19 @@ public class Exercises {
      */
     private static void exercise2() {
         System.out.println("\nExercise 2: ");
-        // Your code here
-        enum Seasons {
-            SPRING,
-            SUMMER,
-            FALL,
-            WINTER;
-        }
-        Seasons currentSeason = Seasons.SPRING;
+        counterRange();
+    }
 
+    // Your code here
+    enum Seasons {
+        SPRING,
+        SUMMER,
+        FALL,
+        WINTER;
+    }
+
+    public static void counterRange() {
+        Seasons currentSeason = Seasons.SPRING;
         String monthRange;
 
         switch (currentSeason) {
@@ -158,30 +163,33 @@ public class Exercises {
     private static void exercise5() {
         System.out.println("\nExercise 5: ");
         // Your code here
-        enum Operator{
-            ADD,
-            SUBTRACT,
-            MULTIPLY,
-            DIVIDE;
-        }
+        operator();
+    }
 
+    enum Operator {
+        ADD,
+        SUBTRACT,
+        MULTIPLY,
+        DIVIDE;
+    }
+
+    public static void operator() {
+        Operator operazione = Operator.DIVIDE;
         double num1 = 5;
         double num2 = 2;
 
-        Operator operazione = Operator.DIVIDE;
-
         switch (operazione) {
             case ADD:
-                System.out.println(num1+num2);
+                System.out.println(num1 + num2);
                 break;
             case SUBTRACT:
-                System.out.println(num1-num2);
+                System.out.println(num1 - num2);
                 break;
             case MULTIPLY:
-                System.out.println(num1*num2);
+                System.out.println(num1 * num2);
                 break;
             case DIVIDE:
-                System.out.println(num1/num2);
+                System.out.println(num1 / num2);
                 break;
             default:
                 System.out.println("Invalid operator.");
