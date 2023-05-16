@@ -59,8 +59,8 @@ public class Exercises {
         Dog dog1 = new Dog(1.05,79.3,"Alano");
         Fish fish1 = new Fish(0.15,0.14, "Trota");
         Bird bird1 = new Bird(8.9, 4.00,8.98);
-        System.out.println(Dog.runSpeedMetersPerSecond());
-        System.out.println(Fish.swimSpeedMetersPerSecond());
-        System.out.println(Bird.flySpeedMetersPerSecond());
+        System.out.println("Il cane va a "+Dog.runSpeedMetersPerSecond()+"km/s");
+        System.out.println("il pesce va a "+Fish.swimSpeedMetersPerSecond()+"km/s");
+        System.out.println("L'uccello va a "+Bird.flySpeedMetersPerSecond()+"km/s");
     }
 }
