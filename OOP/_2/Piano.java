@@ -1,8 +1,11 @@
 package JavaAdvanced.OOP._2;
 
-public class Piano extends Instrument implements Playable {
+public class Piano extends Instrument {
+    public Piano(String name, String brand) {
+        super(name, brand);
+    }
     @Override
-    public String play() {
-        return "River flow in you";
+    public void play() {
+        System.out.println("River flow in you played with " + getBrand());
     }
 }

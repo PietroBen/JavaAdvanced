@@ -1,12 +1,12 @@
 package JavaAdvanced.OOP._2;
 
-public class Rectangle extends Shape implements Calculator{
+public class Rectangle extends Shape{
     public Rectangle(double height, double width) {
         super(height, width);
     }
 
     @Override
-    public double calculateArea() {
-        return height * width;
+    public void calculateArea() {
+        System.out.println(height * width);
     }
 }

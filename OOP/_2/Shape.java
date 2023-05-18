@@ -1,6 +1,6 @@
 package JavaAdvanced.OOP._2;
 
-abstract class Shape {
+public abstract class Shape {
     double height;
     double width;
 
@@ -24,4 +24,5 @@ abstract class Shape {
     public void setWidth(double width) {
         this.width = width;
     }
+    public abstract void calculateArea();
 }

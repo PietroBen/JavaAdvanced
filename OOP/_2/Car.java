@@ -2,12 +2,12 @@ package JavaAdvanced.OOP._2;
 
 public class Car implements Movable{
     @Override
-    public int moveForward() {
-        return 5;
+    public void moveForward() {
+        System.out.println("The car moves forward");
     }
 
     @Override
-    public int moveBackward() {
-        return 1;
+    public void moveBackward() {
+        System.out.println("The car moves backward");
     }
 }

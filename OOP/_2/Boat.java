@@ -3,12 +3,12 @@ package JavaAdvanced.OOP._2;
 public class Boat implements Movable{
 
     @Override
-    public int moveForward() {
-        return 1;
+    public void moveForward() {
+        System.out.println("The boat moves forward");
     }
 
     @Override
-    public int moveBackward() {
-        return 1;
+    public void moveBackward() {
+        System.out.println("The boat moves backward");
     }
 }

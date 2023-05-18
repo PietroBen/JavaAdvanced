@@ -25,8 +25,8 @@ public class Exercises {
         // Your code here
         Rectangle rettangolo1 = new Rectangle(4, 4);
         Circle cerchio1 = new Circle(4, 4);
-        System.out.println(rettangolo1.calculateArea());
-        System.out.println(cerchio1.calculateArea());
+        rettangolo1.calculateArea();
+        cerchio1.calculateArea();
     }
 
     /**
@@ -43,9 +43,11 @@ public class Exercises {
         System.out.println("\nExercise 2: ");
         // Your code here
         Car car1 = new Car();
+        car1.moveForward();
+        car1.moveBackward();
         Boat boat1 = new Boat();
-        System.out.println("The car has "+car1.moveBackward()+" move backward and "+car1.moveForward()+" moves forward.");
-        System.out.println("The boat has "+boat1.moveBackward()+" move backward and "+boat1.moveForward()+" moves forward.");
+        boat1.moveForward();
+        boat1.moveBackward();
     }
 
     /**
@@ -63,9 +65,9 @@ public class Exercises {
     private static void exercise3() {
         System.out.println("\nExercise 3: ");
         // Your code here
-        Guitar electricGuitar = new Guitar();
-        Piano classicPiano = new Piano();
-        System.out.println(electricGuitar.play());
-        System.out.println(classicPiano.play());
+        Guitar electricGuitar = new Guitar("Stratocaster","Fender");
+        Piano classicPiano = new Piano("Henry","Steinway & Sons");
+        electricGuitar.play();
+        classicPiano.play();
     }
 }

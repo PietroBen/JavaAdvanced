@@ -1,10 +1,14 @@
 package JavaAdvanced.OOP._2;
 
-public class Guitar extends Instrument implements Playable {
+public class Guitar extends Instrument{
+
+    public Guitar(String name, String brand) {
+        super(name, brand);
+    }
 
     @Override
-    public String play() {
-        return "Rock'n'roll!";
+    public void play() {
+        System.out.println("Rock'n'roll! Is played with "+ getBrand());
     }
 
 }
