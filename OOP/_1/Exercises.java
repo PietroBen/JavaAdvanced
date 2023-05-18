@@ -22,7 +22,9 @@ public class Exercises {
     private static void exercise1() {
         System.out.println("\nExercise 1: ");
         // Your code here
+        Dog cane1 = new Dog(0.45,9.00, "Bulldog");
 
+        System.out.println("The "+cane1.getBreed()+" is tall "+cane1.getHeight()+"m and heavy "+cane1.getWeight()+"Kg");
     }
 
     /**
@@ -38,6 +40,14 @@ public class Exercises {
     private static void exercise2() {
         System.out.println("\nExercise 2: ");
         // Your code here
+        Fish pesce1 = new Fish(0.25,0.40, "Salmon");
+
+        System.out.println("The "+pesce1.getSpecies()+" is tall "+pesce1.getHeight()+"m and heavy "+pesce1.getWeight()+"Kg");
+
+        Bird uccello1 = new Bird(0.85,0.70, 8.89, "Tucan");
+
+        System.out.println("The "+uccello1.getBreed()+" is tall "+uccello1.getHeight()+"m and heavy "+uccello1.getWeight()+"Kg");
+
     }
 
 
@@ -56,11 +66,11 @@ public class Exercises {
         // Your code here
         Dog dog1 = new Dog(1.05, 79.3, "Alano");
         Fish fish1 = new Fish(0.15, 0.14, "Trota");
-        Bird bird1 = new Bird(8.9, 4.00, 8.98);
+        Bird bird1 = new Bird(8.9, 4.00, 8.89 ,"Colibrì");
 
-        System.out.println("Il cane va a " + Dog.runSpeedMetersPerSecond() + "km/s");
-        System.out.println("il pesce va a " + Fish.swimSpeedMetersPerSecond() + "km/s");
-        System.out.println("L'uccello va a " + Bird.flySpeedMetersPerSecond() + "km/s");
+        System.out.println("The "+dog1.getBreed()+" run at "+ Dog.runSpeedMetersPerSecond() + "km/s");
+        System.out.println("The "+fish1.getSpecies()+" run at " + Fish.swimSpeedMetersPerSecond() + "km/s");
+        System.out.println("The "+bird1.getBreed()+" run at " + Bird.flySpeedMetersPerSecond() + "km/s");
 
         if (Dog.runSpeedMetersPerSecond() > Fish.swimSpeedMetersPerSecond() && Dog.runSpeedMetersPerSecond() > Bird.flySpeedMetersPerSecond()) {
             System.out.println("The dog has the fastest movement speed in MetersPerSecond");

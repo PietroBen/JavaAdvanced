@@ -1,7 +1,7 @@
 package JavaAdvanced.OOP._1;
 
 public class Dog extends Animal{
-    String breed;
+     private String breed;
 
     public Dog(double height, double weight, String breed) {
         super(height, weight);
